@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timestamp Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>
+
+<body>
+    <div class="nav-bar">
+        <a href="index.html" class='nav-bar-element mobile-logo'>Utility Apps</a>
+        <div class="dropdown">
+            <a href="#" class="nav-bar-element mobile-list">Encoder-Decoder<i class="fas fa-caret-down"
+                    style="background-color: black;"></i></a>
+            <div class="dropdown-content">
+                <a href="url-encoder-decoder.html" class="nav-bar-element dropdown-element">URL Encoder-Decoder</a>
+                <a href="base64-encoder-decoder.html" class="nav-bar-element dropdown-element">Base64
+                    Encoder-Decoder</a>
+                <a href="hash-generator.html" class="nav-bar-element dropdown-element">Hash Generator</a>
+            </div>
+        </div>
+        <a href="rgb-hex-converter.html" class="nav-bar-element mobile-list">RGB/Hex Converter</a>
+        <a href="timestamp-converter.html" class="nav-bar-element mobile-list" style="color: burlywood;">Timestamp
+            Converter</a>
+        <div class="dropdown">
+            <a href="#" class="nav-bar-element mobile-list">Unit Converter<i class="fas fa-caret-down"
+                    style="background-color: black;"></i></a>
+            <div class="dropdown-content">
+                <a href="length-converter.html" class="nav-bar-element dropdown-element">Length Converter</a>
+                <a href="temperature-converter.html" class="nav-bar-element dropdown-element">Temperature Converter</a>
+            </div>
+        </div>
+        <a href="number-base-converter.html" class="nav-bar-element mobile-list">Number Base Converters</a>
+        <a href="text-tools.html" class="nav-bar-element mobile-list">Text Tools/String Utility</a>
+        <i class="fas fa-bars hamburger" style="color: white; background-color: black;"></i>
+    </div>
+    <div class="below-navbar">
+        <div class="input-output-group ">
+            <h1>Timestamp<=>Date Converter</h1>
+            <h2>Current timestamp is:-<div id="unix-timestamp"></div>
+            </h2>
+            <h1>Unix timestamp value:-</h1>
+            <input type="text" class='input' id='timestamp' value='' placeholder="1611041456(timestamp)">
+            <input type="button" id='timestamp-to-date' class='button' value='convert'>
+            <h1>Date value:-</h1>
+            <div class="date-input">
+                <table>
+                    <thead>
+                        <th>
+                            <h2>Date:-</h2>
+                        </th>
+                        <th>
+                            <h2>Mon:-</h2>
+                        </th>
+                        <th>
+                            <h2>Year:-</h2>
+                        </th>
+                        <th>
+                            <h2>Hr:-</h2>
+                        </th>
+                        <th>
+                            <h2>Min:-</h2>
+                        </th>
+                        <th>
+                            <h2>Sec:-</h2>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class='date-input-element' id='date' value='' placeholder='date'>
+                            </td>
+                            <td><input type="text" class='date-input-element' id='month' value='' placeholder='month'>
+                            </td>
+                            <td><input type="text" class='date-input-element date-input-year' id='year' value=''
+                                    placeholder='year'></td>
+                            <td><input type="text" class='date-input-element' id='hour' value='' placeholder='hour'>
+                            </td>
+                            <td><input type="text" class='date-input-element' id='minute' value='' placeholder='min'>
+                            </td>
+                            <td><input type="text" class='date-input-element' id='seconds' value='' placeholder='sec'>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <input type="text" class='input' id='human-date' value='' placeholder='DD.MM.YY.HH.mm.ss(date)'> -->
+
+                <!-- <p>Day:- Mon:- Year: - Hours:- Min:- Sec:-</p>
+                <input type="text" class='date-input-element' id='date' value='1' placeholder='month'>
+                <input type="text" class='date-input-element' id='month' value='1' placeholder='month'>
+                <input type="text" class='date-input-element date-input-year' id='year' value='2021' placeholder='yr'>
+                <input type="text" class='date-input-element' id='hour' value='1' placeholder='hour'>
+                <input type="text" class='date-input-element' id='minute' value='1' placeholder='minute'>
+                <input type="text" class='date-input-element' id='second' value='1' placeholder='second'> -->
+
+            </div>
+            <input type="button" id='date-to-timestamp' class='button' value='convert'>
+            <p>Note:-Sample value for timestamp is 1611041456<br>
+                Sample value for date is 19.1.2021.13.0.56 (date.month.year.hours.minutes.seconds)</p>
+        </div>
+
+    </div>
+
+
+    <script src="hamburger.js"></script>
+    <script src="https://kit.fontawesome.com/b5652605f0.js" crossorigin="anonymous"></script>
+    <script src="timestamp-converter.js"></script>
+</body>
+
+</html>

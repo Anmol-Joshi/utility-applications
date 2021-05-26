@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5652605f0.js" crossorigin="anonymous"></script>
+</head>
+<STYLE>
+  a {
+    text-decoration: none;
+  }
+</STYLE>
+
+<body>
+    <div class="nav-bar">
+        <a href="index.html" class='nav-bar-element mobile-logo'>Utility Apps</a>
+        <div class="dropdown">
+            <a href="#" class="nav-bar-element mobile-list" style="color: burlywood;">Encoder-Decoder <i
+                    class="fas fa-caret-down" style="background-color: black"></i></a>
+            <div class="dropdown-content">
+                <a href="url-encoder-decoder.html" class="nav-bar-element dropdown-element">URL Encoder-Decoder</a>
+                <a href="base64-encoder-decoder.html" class="nav-bar-element dropdown-element">Base64
+                    Encoder-Decoder</a>
+                <a href="hash-generator.html" class="nav-bar-element dropdown-element" style="color: burlywood;">Hash
+                    Generator</a>
+            </div>
+        </div>
+        <a href="rgb-hex-converter.html" class="nav-bar-element mobile-list">RGB/Hex Converter</a>
+        <a href="timestamp-converter.html" class="nav-bar-element mobile-list">Timestamp Converter</a>
+        <div class="dropdown">
+            <a href="#" class="nav-bar-element mobile-list">Unit Converter <i class="fas fa-caret-down"
+                    style="background-color: black"></i></a>
+            <div class="dropdown-content">
+                <a href="length-converter.html" class="nav-bar-element dropdown-element">Length Converter</a>
+                <a href="temperature-converter.html" class="nav-bar-element dropdown-element">Temperature Converter</a>
+            </div>
+        </div>
+        <a href="number-base-converter.html" class="nav-bar-element mobile-list">Number Base Converters</a>
+        <a href="text-tools.html" class="nav-bar-element mobile-list">Text Tools/String Utility</a>
+        <i class="fas fa-bars hamburger" style="color: white;background-color: black;"></i>
+    </div>
+    <div class="below-navbar">
+        <div class="input-output-group">
+            <h1 style="margin-bottom: 5px;">Hash Generator</h1>
+            <h2>Input</h2>
+            <input type="text" id='hash-input' class='input' value='' placeholder="Input">
+            <h2>MD5 Hash Output</h2>
+            <input type="text" id='md5-hash-output' class='output' value='' placeholder="MD5 Hash Output">
+            <h2>SHA-1 Hash Output</h2>
+            <input type="text" id='sha1-hash-output' class='output' value='' placeholder="SHA-1 Hash Output">
+            <h2>SHA-256 Hash Output</h2>
+            <input type="text" id='sha256-hash-output' class='output' value='' placeholder="SHA-256 Hash Output">
+            <h2>SHA-512 Hash Output</h2>
+            <input type="text" id='sha512-hash-output' class='output' value='' placeholder="SHA-512 Hash Output">
+        </div>
+    </div>
+
+
+    <script src="hamburger.js"></script>
+    <script src="./hash-generator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+</body>
+
+</html>
