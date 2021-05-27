@@ -224,8 +224,8 @@ h2 {
   .dropdown-content {
     display: none;
 
-    /* position: absolute; */
-    position: static;
+    position: absolute;
+    /* position: static; */
     background-color: black;
     min-width: 160px;
 
