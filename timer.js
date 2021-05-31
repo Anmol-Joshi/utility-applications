@@ -28,14 +28,37 @@ hour.addEventListener('input', () => {
     }
 });
 let flag = 0;
+const stopNotification = () => {
+    alert('timer ended');
+};
+
 start.addEventListener('click', () => {
     if (flag === 0) {
         flag = 1;
-        // const start = document.querySelector('#start-timer');
         start.value = 'stop';
         interval = setInterval(() => {
-            if ((sec.value === 0) & ((min.value > 0) | (hour.value > 0))) {
+            if (sec.value === '') {
+                sec.value = 0;
+            }
+            if (min.value === '') {
+                min.value = 0;
+            }
+            if (hour.value === '') {
+                hour.value = 0;
+            }
+            if (sec.value <= 0 && min.value <= 0 && hour.value <= 0) {
+                clearInterval(interval);
+                flag = 0;
+                sec.value = 0;
+                min.value = 0;
+                hour.value = 0;
+                start.value = 'start';
+                setTimeout(stopNotification, 1);
+            }
+            if (sec.value <= 0) {
                 if (min.value > 0) {
+                    // console.log('inside if');
+                    // console.log(min.value)
                     sec.value = 59;
                     min.value -= 1;
                 } else if (hour.value > 0) {
@@ -43,13 +66,23 @@ start.addEventListener('click', () => {
                     min.value = 59;
                     sec.value = 59;
                 }
-            } else if (sec.value <= 0) {
-                clearInterval(interval);
-                flag = 0;
-                start.value = 'start';
-                alert('timer ended');
+
+                // else if (hour.value > 0) {
+                //     hour.value -= 1;
+                //     min.value = 59;
+                //     sec.value = 59;
+                // }
             } else {
                 sec.value -= 1;
+                if (sec.value <= 0 && min.value <= 0 && hour.value <= 0) {
+                    clearInterval(interval);
+                    flag = 0;
+                    sec.value = 0;
+                    min.value = 0;
+                    hour.value = 0;
+                    start.value = 'start';
+                    setTimeout(stopNotification, 1);
+                }
             }
         }, 1000);
     } else {
