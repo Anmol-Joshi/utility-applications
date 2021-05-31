@@ -7,22 +7,34 @@
 }
 
 /* *, */
+h1,
+h2,
+li {
+  color: white !important;
+}
 
 body,
 h1,
 .input-output-group,
 .below-navbar {
-  background-color: white;
+  background-color: #005792
+
+  /* white; */
+
+  /* color: white */
 }
 
 body {
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 16px
+
+  /* 16px; */
 }
 
 nav {
   background: #222;
   padding: 0 15px;
+  font-size: 20px;
 }
 
 a {
@@ -37,7 +49,7 @@ a {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px;
 
   /* 7.5px 10px 7.5px 0; */
@@ -183,6 +195,7 @@ h2 {
   /* margin-top: 120px; */
   font-size: 30px;
   padding: 5px;
+  border-radius: 10px !important;
 }
 
 .input-output-group {
@@ -194,7 +207,9 @@ h2 {
 }
 
 .button {
-  background-color: black;
+  background-color: #222;
+
+  /* black; */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -203,10 +218,11 @@ h2 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 25px;
 }
 
 .button:hover {
-  color: burlywood;
+  color: grey;
 }
 
 textarea {
