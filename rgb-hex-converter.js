@@ -150,11 +150,11 @@ blue.addEventListener('input', () => {
 });
 hexValue.addEventListener('input', () => {
     if ((hexValue.value === '') | ((hexValue.value.length > 6) | (hexValue.value.length === 4))) {
-        document.querySelector('*').style.backgroundColor = '#f8f9fa';
-        document.querySelector('body').style.backgroundColor = '#f8f9fa';
-        document.querySelector('h1').style.backgroundColor = '#f8f9fa';
-        document.querySelector('.input-output-group').style.backgroundColor = '#f8f9fa';
-        document.querySelector('.below-navbar').style.backgroundColor = '#f8f9fa';
+        document.querySelector('*').style.backgroundColor = '#005792';
+        document.querySelector('body').style.backgroundColor = '#005792';
+        document.querySelector('h1').style.backgroundColor = '#005792';
+        document.querySelector('.input-output-group').style.backgroundColor = '#005792';
+        document.querySelector('.below-navbar').style.backgroundColor = '#005792';
     } else {
         document.querySelector('*').style.backgroundColor = `#${hexValue.value}`;
         document.querySelector('body').style.backgroundColor = `#${hexValue.value}`;
@@ -165,11 +165,11 @@ hexValue.addEventListener('input', () => {
 });
 red.addEventListener('input', () => {
     if (hexValue.value === '') {
-        document.querySelector('*').style.backgroundColor = '#f8f9fa';
-        document.querySelector('body').style.backgroundColor = '#f8f9fa';
-        document.querySelector('h1').style.backgroundColor = '#f8f9fa';
-        document.querySelector('.input-output-group').style.backgroundColor = '#f8f9fa';
-        document.querySelector('.below-navbar').style.backgroundColor = '#f8f9fa';
+        document.querySelector('*').style.backgroundColor = '#005792';
+        document.querySelector('body').style.backgroundColor = '#005792';
+        document.querySelector('h1').style.backgroundColor = '#005792';
+        document.querySelector('.input-output-group').style.backgroundColor = '#005792';
+        document.querySelector('.below-navbar').style.backgroundColor = '#005792';
     } else {
         document.querySelector('*').style.backgroundColor = `#${hexValue.value}`;
         document.querySelector('body').style.backgroundColor = `#${hexValue.value}`;
@@ -180,11 +180,11 @@ red.addEventListener('input', () => {
 });
 blue.addEventListener('input', () => {
     if (hexValue === '') {
-        document.querySelector('*').style.backgroundColor = '#f8f9fa';
-        document.querySelector('body').style.backgroundColor = '#f8f9fa';
-        document.querySelector('h1').style.backgroundColor = '#f8f9fa';
-        document.querySelector('.input-output-group').style.backgroundColor = '#f8f9fa';
-        document.querySelector('.below-navbar').style.backgroundColor = '#f8f9fa';
+        document.querySelector('*').style.backgroundColor = '#005792';
+        document.querySelector('body').style.backgroundColor = '#005792';
+        document.querySelector('h1').style.backgroundColor = '#005792';
+        document.querySelector('.input-output-group').style.backgroundColor = '#005792';
+        document.querySelector('.below-navbar').style.backgroundColor = '#005792';
     } else {
         document.querySelector('*').style.backgroundColor = `#${hexValue.value}`;
         document.querySelector('body').style.backgroundColor = `#${hexValue.value}`;
@@ -195,11 +195,11 @@ blue.addEventListener('input', () => {
 });
 green.addEventListener('input', () => {
     if (hexValue === '') {
-        document.querySelector('*').style.backgroundColor = '#f8f9fa';
-        document.querySelector('body').style.backgroundColor = '#f8f9fa';
-        document.querySelector('h1').style.backgroundColor = '#f8f9fa';
-        document.querySelector('.input-output-group').style.backgroundColor = '#f8f9fa';
-        document.querySelector('.below-navbar').style.backgroundColor = '#f8f9fa';
+        document.querySelector('*').style.backgroundColor = '#005792';
+        document.querySelector('body').style.backgroundColor = '#005792';
+        document.querySelector('h1').style.backgroundColor = '#005792';
+        document.querySelector('.input-output-group').style.backgroundColor = '#005792';
+        document.querySelector('.below-navbar').style.backgroundColor = '#005792';
     } else {
         document.querySelector('*').style.backgroundColor = `#${hexValue.value}`;
         document.querySelector('body').style.backgroundColor = `#${hexValue.value}`;
