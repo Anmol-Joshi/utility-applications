@@ -197,6 +197,7 @@ h2 {
   padding: 5px;
   border-radius: 10px !important;
   text-align: center;
+  border: none;
 }
 
 .input-output-group {
