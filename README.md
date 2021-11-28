@@ -1,12 +1,10 @@
-# utility-applications
+# Utility Applications:-
 
-## Application link
-https://utilityapplications.netlify.app/
+## Application link:- https://utilityapplications.netlify.app/
 
-## Application video
-https://youtu.be/r1Ibfxa_JnA
+## Application video:- https://youtu.be/r1Ibfxa_JnA
 
-## This web-app has the following utilities:
+## This web-app has the following utilities:-
 
 <ol>
 <li>Converter:
